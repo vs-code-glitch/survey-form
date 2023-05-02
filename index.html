@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+    <h1 id="title"><strong>freeCodeCamp Survey Form</strong></h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    </header>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name"  placeholder="Enter your name" required><br>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your Email" required><br>
+        <label for="age" id="number-label">Age (optional)</label><br>
+        <input type="number" id="number"  min="18" max="45"placeholder="Age"><br>
+        <p>Which option best describes your current role?</p><br>
+        <select id="dropdown">
+            <option selected="selected" value="Select current role" disabled>select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Others</option>
+        </select><br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" id="recommend1" name="recommend" value="Definitely">
+        <label for="recommend1"> Definitely</label><br>
+        <input type="radio" id="recommend2" name="recommend" value="Maybe">
+        <label for="recommend2"> Maybe</label><br>
+        <input type="radio" id="recommend3" name="recommend" value="Not sure">
+        <label for="recommend3">Not sure</label><br>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select>
+            <option selected="selected" value="Select an option" disabled>select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+        </select><br>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input type="checkbox" id="op1" name="op1" value="Front-end Projects">
+        <label for="op1">Front-end Projects</label><br>
+        <input type="checkbox" id="op2" name="op2" value="Back-end Projects">
+        <label for="vehicle2"> Back-end Projects</label><br>
+        <input type="checkbox" id="op3" name="op3" value="Data Visualization">
+        <label for="vehicle3"> Data Visualization</label><br>
+        <input type="checkbox" id="op4" name="op4" value="Challenges">
+        <label for="vehicle1"> Challenges</label><br>
+        <input type="checkbox" id="op5" name="op5" value="Open Source Community">
+        <label for="vehicle2"> Open Source Community</label><br>
+        <input type="checkbox" id="op6" name="op6" value="Gitter help rooms">
+        <label for="vehicle3"> Gitter help rooms</label><br>
+        <input type="checkbox" id="op7" name="op7" value="Videos">
+        <label for="vehicle1"> Videos</label><br>
+        <input type="checkbox" id="op8" name="op8" value="City Meetups">
+        <label for="vehicle2"> City Meetups</label><br>
+        <input type="checkbox" id="op9" name="op9" value="Wiki">
+        <label for="vehicle3"> Wiki</label><br>
+        <input type="checkbox" id="op10" name="op10" value="Forum">
+        <label for="vehicle2"> Forum</label><br>
+        <input type="checkbox" id="op11" name="op11" value="Additional Courses">
+        <label for="vehicle3"> Additional Courses</label><br>
+        <p>Any comments or suggestions?</p>
+        <textarea placeholder="Enter your comment here..." cols="25" rows="5">
+          
+        </textarea><br>
+        <button id="submit">Submit</button>
+        </form>
+</body>
+
+</html>
